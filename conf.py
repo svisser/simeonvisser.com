@@ -57,6 +57,7 @@ SIDEBAR_LINKS = {
     DEFAULT_LANG: (
         ('/pages/about.html', 'About'),
         ('/pages/projects.html', 'Projects'),
+        ('/pages/walks.html', 'Walks'),
         ('/archive.html', 'Archive'),
         ('/categories/index.html', 'Tags'),
     ),
