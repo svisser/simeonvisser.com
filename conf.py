@@ -53,7 +53,7 @@ TRANSLATIONS = {
 
 # Links for the sidebar / navigation bar.
 # You should provide a key-value pair for each used language.
-SIDEBAR_LINKS = {
+NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/pages/about.html', 'About'),
         ('/pages/projects.html', 'Projects'),
@@ -90,9 +90,12 @@ SIDEBAR_LINKS = {
 # rss feeds.
 #
 
-post_pages = (
-    ("posts/*.md", "posts", "post.tmpl", True),
-    ("pages/*.md", "pages", "story.tmpl", False),
+POSTS = (
+    ("posts/*.md", "posts", "post.tmpl"),
+)
+
+PAGES = (
+    ("pages/*.md", "pages", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -108,7 +111,7 @@ post_pages = (
 # 'rest' is reStructuredText
 # 'markdown' is MarkDown
 # 'html' assumes the file is html and just copies it
-post_compilers = {
+COMPILERS = {
     "rest": ('.txt', '.rst'),
     "markdown": ('.md', '.mdown', '.markdown'),
     "textile": ('.textile',),
