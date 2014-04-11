@@ -3,3 +3,4 @@
 *.pyc
 cache/*
 output/*
+themes/*
