@@ -9,6 +9,10 @@
 
 An overview of some of my personal digital projects:
 
+## Photography
+
+You can find my photos on [500px.com](http://500px.com/simeonvisser).
+
 ## simeonvisser.com (2010 - )
 
 This website initially ran on a homebuilt file-based content management system
