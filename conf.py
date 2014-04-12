@@ -149,7 +149,8 @@ COMPILERS = {
 # Final locations are:
 # output / TRANSLATION[lang] / RSS_PATH / rss.xml
 # RSS_PATH = ""
-CREATE_MONTHLY_ARCHIVE = True
+CREATE_MONTHLY_ARCHIVE = False
+CREATE_SINGLE_ARCHIVE = True
 
 # Slug the Tag URL easier for users to type, special characters are
 # often removed or replaced as well.
