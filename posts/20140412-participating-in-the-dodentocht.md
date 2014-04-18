@@ -2,7 +2,7 @@
 .. title: Participating in the Dodentocht
 .. slug: participating-in-the-dodentocht
 .. date: 2014/04/12 00:05:00
-.. tags: photography, walking, belgium
+.. tags: photography, walking, belgium, travel
 .. link:
 .. description:
 -->

@@ -2,7 +2,7 @@
 .. title: Python 3: Using "yield from" in Generators - Part 1
 .. slug: python-3-using-yield-from-in-generators-part-1
 .. date: 2013/01/26 09:12:00
-.. tags: python, software-development
+.. tags: python, software
 .. link:
 .. description:
 -->

@@ -2,7 +2,7 @@
 .. title: How to Mock Logging in Python
 .. slug: how-to-mock-logging-in-python
 .. date: 2013/04/13 22:08:00
-.. tags: python, software-development, software-testing
+.. tags: python, software
 .. link:
 .. description:
 -->

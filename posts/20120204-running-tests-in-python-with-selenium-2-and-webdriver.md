@@ -2,7 +2,7 @@
 .. title: Running Tests in Python with Selenium 2 and WebDriver
 .. slug: running-tests-in-python-with-selenium-2-and-webdriver
 .. date: 2012/02/04 11:00:00
-.. tags: python, software-development, software-testing
+.. tags: python, software
 .. link:
 .. description:
 -->

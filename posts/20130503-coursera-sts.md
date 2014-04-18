@@ -2,7 +2,7 @@
 .. title: My First Coursera Course
 .. slug: my-first-coursera-course
 .. date: 2013/05/03 18:08:00
-.. tags: coursera,learning,technology,science,innovation,china
+.. tags: software
 .. link:
 .. description:
 -->

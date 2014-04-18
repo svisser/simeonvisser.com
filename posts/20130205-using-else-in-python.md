@@ -2,7 +2,7 @@
 .. title: Using 'else' in Python
 .. slug: using-else-in-python
 .. date: 2013/02/05 11:00:00
-.. tags: python, software-development
+.. tags: python, software
 .. link:
 .. description:
 -->

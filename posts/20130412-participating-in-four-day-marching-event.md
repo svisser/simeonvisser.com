@@ -2,7 +2,7 @@
 .. title: Participating in the International Four Days Marches Nijmegen
 .. slug: participating-in-the-international-four-days-marches-nijmegen
 .. date: 2013/04/12 21:52:00
-.. tags: four-days-marches, walking, the-netherlands
+.. tags: walking, the-netherlands
 .. link:
 .. description:
 -->

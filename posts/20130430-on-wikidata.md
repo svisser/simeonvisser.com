@@ -2,7 +2,7 @@
 .. title: Why Wikidata is Great for Wikipedia
 .. slug: why-wikidata-is-great-for-wikipedia
 .. date: 2013/04/30 21:57:00
-.. tags: wikipedia,wikidata,semantic-web
+.. tags: software
 .. link:
 .. description:
 -->

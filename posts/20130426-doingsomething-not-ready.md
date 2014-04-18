@@ -2,7 +2,7 @@
 .. title: Not DoingSomething Yet
 .. slug: not-doingsomething-yet
 .. date: 2013/04/26 22:50:00
-.. tags: london,online-dating,user-experience
+.. tags: london
 .. link:
 .. description:
 -->

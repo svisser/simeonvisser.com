@@ -2,7 +2,7 @@
 .. title: Notes On Amazon RDS Replication Lag
 .. slug: notes-on-replication-lag-on-amazon-rds
 .. date: 2013/11/13 21:30:00
-.. tags: amazon-aws, amazon-rds, cloud, mysql, database
+.. tags: software
 .. link:
 .. description:
 -->

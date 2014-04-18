@@ -2,7 +2,7 @@
 .. title: List Comprehensions Are For Lists
 .. slug: list-comprehensions-are-for-lists
 .. date: 2013/05/08 12:44:00
-.. tags: python,lists,list-comprehensions
+.. tags: python, software
 .. link:
 .. description:
 -->

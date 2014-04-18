@@ -2,7 +2,7 @@
 .. title: How To Walk 200km in Four Days
 .. slug: four-days-marches-nijmegen-2013
 .. date: 2013/08/10 23:34:00
-.. tags: four-days-marches, walking, the-netherlands
+.. tags: walking, the-netherlands
 .. link:
 .. description:
 -->

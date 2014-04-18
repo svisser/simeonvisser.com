@@ -2,7 +2,7 @@
 .. title: How Does 'from __future__ import ...' Work in Python?
 .. slug: how-does-from-future-import-work-in-python
 .. date: 2013/05/27 00:18:00
-.. tags: python,software-development,programming-languages,parsers
+.. tags: python, software
 .. link:
 .. description:
 -->

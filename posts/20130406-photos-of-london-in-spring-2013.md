@@ -2,7 +2,7 @@
 .. title: Photos of London in Spring 2013
 .. slug: photos-of-london-in-spring-2013
 .. date: 2013/04/06 20:15:00
-.. tags: photography, london, architecture
+.. tags: photography, london
 .. link:
 .. description:
 -->
