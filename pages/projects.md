@@ -13,6 +13,17 @@ An overview of some of my personal digital projects:
 
 You can find my photos on [500px.com](http://500px.com/simeonvisser).
 
+## ipuz (2014)
+
+ipuz is a Python library to read and write the
+[ipuz file format](http://ipuz.org/).
+
+A partial implementation of the specification could already be found in
+my crossword editor Palabra (see below). The ipuz library supports all
+official puzzle specifications as opposed to only crossword puzzles.
+
+* [Website](https://github.com/svisser/ipuz)
+
 ## simeonvisser.com (2010 - )
 
 This website initially ran on a homebuilt file-based content management system
@@ -38,7 +49,7 @@ Palabra is a desktop application written in Python and C, using [GTK](http://www
 
 ## egdieren.nl (2007 - )
 
-egdieren.nl is a website written from scratch in PHP.
+[egdieren.nl](http://egdieren.nl/) is a website written from scratch in PHP.
 I've developed both the front-end and back-end using HTML, CSS and
 JavaScript (mostly [jQuery](http://jquery.com/)). The design of the website
 was provided.
