@@ -296,9 +296,9 @@ COMMENT_SYSTEM_ID = None
 #</script>
 #"""
 
-# Enable Addthis social buttons?
-# Defaults to true
-ADD_THIS_BUTTONS = False
+SOCIAL_BUTTONS_CODE = ''
+
+SHOW_SOURCELINK = False
 
 # Modify the number of Post per Index Page
 # Defaults to 10
