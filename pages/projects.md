@@ -69,18 +69,18 @@ Additionally, I've written scripts for interactive in-game events, dialogs and g
 With a few exceptions, all of the content (textures, 2D and 3D models) comes
 from the game itself or the game's fan community.
 
-<i>Unreal Tournament 2004 - VCTF-LavaValley-V2</i>
+<i>Unreal Tournament 2004 - VCTF-LavaValley-V2</i><br />
 <img src="/images/ut2004_1.jpg" alt="" />
 <hr />
 
-<i>Unreal Tournament 2004 - DM-Tehan</i>
+<i>Unreal Tournament 2004 - DM-Tehan</i><br />
 <img src="/images/ut2004_2.jpg" alt="" />
 <hr />
 
-<i>Dink Smallwood - Once in a Lifetime</i>
+<i>Dink Smallwood - Once in a Lifetime</i><br />
 <img src="/images/rpg_1.png" alt="" />
 <hr />
 
-<i>Dink Smallwood - Blood Scorpions</i>
+<i>Dink Smallwood - Blood Scorpions</i><br />
 <img src="/images/rpg_2.png" alt="" />
 <hr />
