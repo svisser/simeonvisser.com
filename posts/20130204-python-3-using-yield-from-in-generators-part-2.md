@@ -25,7 +25,7 @@ done, let each node point to its parent node.
 
 Here is the implementation of this data structure without the new syntax:
 
-<pre>
+```python
 class Node:
 
     def __init__(self, value):
@@ -49,7 +49,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-</pre>
+```
 
 As expected, this prints the values `1`, `2`, `3` (of the left children),
 the value `0` (of the root node) and the values `4`, `5`, and `6` (of the
@@ -60,7 +60,7 @@ and its children; it won't recursively iterate over the children of the
 child nodes (if there happened to be any). Let's modify the `iterate()`
 method to make that happen:
 
-<pre>
+```python
 def iterate(self):
     for node in self.left:
         for value in node.iterate():
@@ -69,7 +69,7 @@ def iterate(self):
     for node in self.right:
         for value in node.iterate():
             yield value
-</pre>
+```
 
 This version also calls `iterate()` on each of the child nodes so this
 yields each of the nodes in the tree. This code is rather cumbersome: for
@@ -77,14 +77,14 @@ each of the left and right children we yield all the values by using
 explicit iteration. This is where `yield from`
 simplifies the code:
 
-<pre>
+```python
 def iterate(self):
     for node in self.left:
         yield from node.iterate()
     yield self.value
     for node in self.right:
         yield from node.iterate()
-</pre>
+```
 
 ### Other aspects of generators ###
 
@@ -98,21 +98,21 @@ than having Python handle most of the generator's execution.
 
 For example, instead of the above basic loop:
 
-<pre>
+```python
 for value in root.iterate():
     print(value)
-</pre>
+```
     
 we can also write:
 
-<pre>
+```python
 it = root.iterate()
 while True:
     try:
         print(it.send(None))
     except StopIteration:
         break
-</pre>
+```
 
 The `send()` method allows you to "send" a value into the generator, which means
 the `yield` expression receives that value. That value can be used by assigning
@@ -140,7 +140,7 @@ you to [the official proposal](http://www.python.org/dev/peps/pep-0380/) for det
 
 Let's create a small generator that demonstrates the above:
 
-<pre>
+```python
 def node_iterate(self):
     for node in self.left:
         input_value = yield node.value
@@ -150,7 +150,7 @@ def node_iterate(self):
     for node in self.right:
         input_value = yield node.value
         # ...
-</pre>
+```
 
 This generator only iterates over the node and its immediate children. Any
 value sent into the generator is stored in the variable `input_value`
@@ -161,7 +161,7 @@ computations and it passes intermediate values back into the generator so
 that they can be used there. The following shows how the yielded values
 are summed and the subtotals are passed back into the generator:
 
-<pre>
+```python
 total = 0
 it = root.node_iterate()
 it.send(None)
@@ -171,14 +171,14 @@ while True:
         total += value
     except StopIteration:
         break
-</pre>
+```
 
 ### Refactoring iteration over children ###
 
 It seems repetitive to have the same code for both the left and right
 children so we can refactor that into:
 
-<pre>
+```python
 def child_iterate(self, nodes):
     for node in nodes:
         input_value = yield node.value
@@ -189,7 +189,7 @@ def node_iterate(self):
     input_value = yield self.value
     # ...
     yield from self.child_iterate(self.right)
-</pre>
+```
 
 Note that it is not recommended practice to call a class method
 (`self.child_iterate`) by passing an instance variable (i.e., the
@@ -203,10 +203,10 @@ receives a value.
 
 Prior to Python 3.3, if we had written:
 
-<pre>
+```python
 for value in self.child_iterate(self.left):
     yield value
-</pre>
+```
 
 then this would yield values from `child_iterate()` but `input_value` would
 remain `None`. To make it work as expected, we would need to explicitly `send()`
@@ -217,7 +217,7 @@ the values from `node_iterate()` into `child_iterate()`.
 Lastly, we can perform one more refactoring step leaving us with only one
 section where the `input_value` is received and used:
 
-<pre>
+```python
 def process(self):
     input_value = yield self.value
     # ...
@@ -230,7 +230,7 @@ def node_iterate(self):
     yield from self.child_iterate(self.left)
     self.process()
     yield from self.child_iterate(self.right)
-</pre>
+```
 
 As you become more familiar with using `send()` and related functions, you'll
 notice that `yield from` makes life easier. I suggest reading the exact

@@ -22,14 +22,14 @@ so perhaps it's worth spreading the word about this.
 For completeness it's important to discuss the basics of the `if/else` first
 as the other uses of 'else' in Python differ slightly differently from this.
 
-<pre>
+```python
 if condition:
     # executed when condition == True
     ...
 else:
     # executed when condition == False
     ...
-</pre>
+```
 
 Despite the familiarity of this construct, it's worth noting that the reason
 why the `else` block is executed is explicitly mentioned in the
@@ -46,12 +46,12 @@ to cleaner code. It frequently happens that we wish to iterate over a collection
 of objects and when a certain condition is met we `break` from the loop.
 For example:
 
-<pre>
+```python
 for car in cars:
     if needs_repair(car):
         send_for_repair(car)
         break
-</pre>
+```
 
 In this example we iterate over a collection of cars and we stop when we've
 found a car that needs a repair. No further cars will be examined when the
@@ -61,7 +61,7 @@ Now, what if we wish to take a certain action
 when we haven't found any car for repair? We could introduce a
 variable `car_found_for_repair` for this purpose:
 
-<pre>
+```python
 car_found_for_repair = False
 for car in cars:
     if needs_repair(car):
@@ -71,14 +71,14 @@ for car in cars:
 if not car_found_for_repair:
     # do something
     ...
-</pre>
+```
 
 Python allows an elegant solution by adding an `else`
 statement to the for loop. The block of code after the `else` is executed when
 we have *not* performed a `break` in the loop. The code now looks as follows
 and it behaves the same:
 
-<pre>
+```python
 for car in cars:
     if needs_repair(car):
         send_for_repair(car)
@@ -86,7 +86,7 @@ for car in cars:
 else:
     # do something
     ...
-</pre>
+```
 
 In other words, when the for loop completes successfully (i.e., without
 being exited by a `break` statement) the `else` section is executed. But
@@ -107,32 +107,32 @@ I'll leave the example out as it would be similar to the above one.
 
 The basics of a `try/except` section in Python consist of:
 
-<pre>
+```python
 try:
     # run some code
 except ValueError:
     # catch exception when it is raised
-</pre>
+```
 
 This means the code within the `try` is executed and when a
 `ValueError` is raised execution continues in the `except` block. Some of you
 will know that a `finally` block can be added to execute code after a
 `try/except` regardless of whether an exception was raised:
 
-<pre>
+```python
 try:
     # run some code
 except ValueError:
     # run this when ValueError is raised
 finally:
     # run this after the code and any exception handling code
-</pre>
+```
 
 Similar to the `for` loop example above, what if we wish to execute some code
 when *no* exception has been raised? We could introduce another boolean variable
 for that purpose but Python allows you to add an `else` block:
 
-<pre>
+```python
 try:
     # run some code
 except ValueError:
@@ -141,7 +141,7 @@ else:
     # run this only when no exception is raised
 finally:
     # run this after the code and any exception handling code
-</pre>
+```
 
 The `else` section is only executed when no exception at all is raised.
 

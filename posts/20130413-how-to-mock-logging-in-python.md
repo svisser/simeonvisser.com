@@ -24,7 +24,7 @@ module rather than installing `mock` from PyPI.
 
 Let's say our code looks like this:
 
-<pre>
+```python
 import logging
 
 def check_value(data_dict, value):
@@ -33,13 +33,13 @@ def check_value(data_dict, value):
     except KeyError:
         logging.warn("Data does not contain '%s'", value)
     return False
-</pre>
+```
 
 What we wish to test is that `logging.warn` is called when the `KeyError`
 is raised. So in our unit test we call `check_value` with parameters in such
 a way that the `KeyError` is indeed raised. For example:
 
-<pre>
+```python
 import unittest
 from my_module import check_value
 
@@ -47,7 +47,7 @@ class MyUnitTest(unittest.TestCase):
 
     def test_check_value_logs_warning(self):
         check_value({}, 'key')
-</pre>
+```
 
 The idea behind mocking is as follows: instead of calling the real
 `warn` function of the `logging` module we call a fake mocked version and
@@ -59,7 +59,7 @@ specifies what we wish to mock and what the name of the mocked object should be.
 
 We can now update our test by writing:
 
-<pre>
+```python
 import unittest
 from mock import patch
 from my_module import check_value
@@ -73,7 +73,7 @@ class MyUnitTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-</pre>
+```
 
 This unit test passes as the assertion is indeed true. If you modify the
 code in a way that it no longer logs a warning then you'll find that the

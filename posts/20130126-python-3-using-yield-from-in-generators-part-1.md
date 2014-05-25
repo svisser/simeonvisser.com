@@ -25,13 +25,13 @@ been computed.
 
 Let's look at the following Python 2 function:
 
-<pre>
+```python
 def not_a_generator():
     result = []
     for i in xrange(2000):
         result.append(perform_expensive_computation(i))
     return result
-</pre>
+```
 
 When we call `not_a_generator()` we have to wait until `perform_expensive_computation`
 has been performed on all 2000 integers.
@@ -40,12 +40,12 @@ This is inconvenient because we may not actually end up using all the
 computed results. For example, we may wish to use the above function
 as follows:
 
-<pre>
+```python
 for element in not_a_generator():
     if not certain_condition(element):
         break
     # ...
-</pre>
+```
 
 Depending on the behaviour of `certain_condition`, it could be that we only
 use the first 700 values returned from `not_a_generator()` and we would have
@@ -53,22 +53,22 @@ wasted time on computing the remaining values.
 
 We can turn `not_a_generator()` into a generator by using the `yield` keyword:
 
-<pre>
+```python
 def my_generator():
     for i in xrange(2000):
         yield perform_expensive_computation(i)
-</pre>
+```
 
 ### Difference between a function and a generator ###
 
 Calling this generator is no different from our previous function:
 
-<pre>
+```python
 for element in my_generator():
     if not certain_condition(element):
         break
     # ...
-</pre>
+```
 
 The difference is that whenever the generator "yields" a value the execution
 of the generator is paused and the code continues where the generator was
@@ -104,20 +104,20 @@ when we know what it does and in which situations it can be used.
 
 Consider a generator that looks like this:
 
-<pre>
+```python
 def generator():
     for i in range(10):
         yield i
     for j in range(10, 20):
         yield j
-</pre>
+```
 
 As expected this generator yields the numbers 0 to 19. Let's say we wish
 to split this generator into two generators so we reuse them elsewhere.
 
 We could rewrite the above into:
 
-<pre>
+```python
 def generator2():
     for i in range(10):
         yield i
@@ -131,18 +131,18 @@ def generator():
         yield i
     for j in generator3():
         yield j
-</pre>
+```
 
 This version of `generator()` also yields the numbers 0 to 19. However, it
 feels unnecessary to specify that we wish to iterate over both `generator2` and
 `generator3` and yield their values. This is where `yield from` comes in.
 Using this new keyword we can rewrite `generator` into:
 
-<pre>
+```python
 def generator():
     yield from generator2()
     yield from generator3()
-</pre>
+```
 
 This gives the same result and it is much cleaner to write and maintain. It is
 also quite similar to the way functions are refactored and split up into
@@ -157,13 +157,13 @@ is rather simple and does not truly justify introducing a new keyword in the lan
 
 Using the `chain` function from the `itertools` module we also could have written:
 
-<pre>
+```python
 from itertools import chain
 
 def generator():
     for v in chain(generator2(), generator3()):
         yield v
-</pre>
+```
 
 It can be argued that the `yield from` syntax and semantics are slightly cleaner
 than importing an additional function from a module but, leaving that aside,
