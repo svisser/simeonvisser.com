@@ -23,6 +23,7 @@ my crossword editor Palabra (see below). The ipuz library supports all
 official puzzle specifications as opposed to only crossword puzzles.
 
 * [Website](https://github.com/svisser/ipuz)
+* [Package at PyPI](http://pypi.python.org/pypi/ipuz)
 
 ## simeonvisser.com (2010 - )
 
