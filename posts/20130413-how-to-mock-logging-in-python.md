@@ -79,4 +79,3 @@ This unit test passes as the assertion is indeed true. If you modify the
 code in a way that it no longer logs a warning then you'll find that the
 assertion in the unit test fails.
 
----
