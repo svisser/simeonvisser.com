@@ -69,7 +69,9 @@ and styled using Bootstrap.
 
 Palabra is a free crossword editor for Ubuntu Linux with a range of features, including
 visual editing tools (e.g., grid symmetry options), grid patterns, word lists, clue editing
-and export to PDF.
+and export to PDF. Interesting components of the program are: computing the statistics
+of a crossword grid as well as some work towards an automated / assisted
+grid filling engine.
 
 Palabra is a desktop application written in Python and C, using [GTK](http://www.gtk.org/), [Cairo](http://cairographics.org/) and [Pango](http://www.pango.org/).
 
