@@ -80,12 +80,12 @@ Palabra is a desktop application written in Python and C, using [GTK](http://www
 
 <img src="/images/palabra_1.png" alt="" />
 
-## egdieren.nl (2007 - )
+## egdieren.nl (2007 - 2013)
 
 [egdieren.nl](http://egdieren.nl/) is a website written from scratch in PHP.
-I've developed both the front-end and back-end using HTML, CSS and
+I developed both the front-end and back-end using HTML, CSS and
 JavaScript (mostly [jQuery](http://jquery.com/)). The design of the website
-was provided.
+was provided. Maintenance of the site was handed over in 2013.
 
 <img src="/images/egd_1.png" alt="" />
 
