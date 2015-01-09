@@ -13,14 +13,42 @@ An overview of some of my personal digital projects:
 
 You can find my photos on [500px.com](http://500px.com/simeonvisser).
 
+## logaugment (2014)
+
+logaugment is a Python library for specifying default values to be used
+in logging calls. This allows you to add, set or remove defaults for keys
+that may be used in formatted logging strings. The library makes it convenient
+to specify defaults and prevents accidental exceptions in case a logging call
+doesn't pass a necessary value that the logger expects.
+
+The project supports Python 2.7+ and 3.1+.
+
+* [Website](https://github.com/svisser/logaugment)
+* [Package at PyPI](http://pypi.python.org/pypi/logaugment)
+
+## Porting puzpy to Python 3.x (2014)
+
+In 2014 I spent some time porting the package puzpy (a Python library
+for parsing .puz crossword files) to support Python 3.x. As a file parsing
+library the changes were predominantly a cleaner Unicode / bytes separation.
+
+The project supports Python 2.7+ and 3.2+.
+
+* [Website](https://github.com/alexdej/puzpy)
+* [Package at PyPI](http://pypi.python.org/pypi/puzpy)
+
 ## ipuz (2014)
 
 ipuz is a Python library to read and write the
-[ipuz file format](http://ipuz.org/).
+[ipuz file format](http://ipuz.org/). The ipuz file format is JSON and supports
+the specification of various puzzles. This Python library performs loading
+and validation of such JSON data.
 
 A partial implementation of the specification could already be found in
 my crossword editor Palabra (see below). The ipuz library supports all
 official puzzle specifications as opposed to only crossword puzzles.
+
+The project supports Python 2.7+ and Python 3.2+.
 
 * [Website](https://github.com/svisser/ipuz)
 * [Package at PyPI](http://pypi.python.org/pypi/ipuz)
