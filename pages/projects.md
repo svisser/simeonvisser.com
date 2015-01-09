@@ -63,6 +63,8 @@ In March 2013 the site was converted to use the Python static site generator
 [Nikola](http://nikola.ralsina.com.ar) with content written in Markdown
 and styled using Bootstrap.
 
+* [Source](https://github.com/svisser/simeonvisser.com)
+
 ## Palabra (2009 - 2011)
 
 Palabra is a free crossword editor for Ubuntu Linux with a range of features, including
